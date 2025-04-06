@@ -1,15 +1,17 @@
 .google-fonts {
   font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: 20px;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+p {
+  font-size: 20px;
 }
 .center {
   text-align: center;
 }
 .decoration {
   font-family: "Arial", "Meiryo", sans-serif;
-  font-size: 20px;
   letter-spacing: 1.2em;
   border-bottom: solid 3px rgb(115, 115, 114);
   text-shadow: 2px 2px 4px gray;
