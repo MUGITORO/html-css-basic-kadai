@@ -4,10 +4,11 @@
   margin-top: 20px;  /* 上余白 */
   margin-bottom: 20px;  /* 下余白 */
   width: 800px;  /* 親要素幅800px */
+  text-align:  center;  /* インラインブロックを中央寄せ */
   background-color: #dcc9f4;
 }
 .top-child {  /* P要素 */
-  display: inline-block;  /* 横並びにする */
+  display: inline-block;  /* インラインブロックにする */
   text-align: center;  /* テキストをセンターに配置 */
   position: relative;
   width: 20%;  /* 親要素の20％幅 */
@@ -23,7 +24,7 @@
   background-color: #ffd9df;
 }
 #middle-child01 {  /* div要素 */
-  position: relative;
+  position: absolute;  /* relative;をabsolute;に修正 */
     top: 100px;
     left: 100px;
   width: 200px;
@@ -31,16 +32,16 @@
   background-color: #87ceeb;
 }
 #middle-child02 {  /* div要素 */
-  position: relative;  /* 要素の配置を指示 */
-    top: 100px;    /* 上から100px */
+  position: absolute;  /* relative;をabsolute;に修正 */
+    top: 300px;    /* 上から100px */
     left: 300px;    /* 左から300px300px */
   width: 200px;
   height: 200px;
   background-color: #87ceeb;
 }
 #middle-child03 {  /* div要素 */
-  position: relative;
-    top: 100px;
+  position: absolute;  /* relative;をabsolute;に修正 */
+    top: 500px;
     left: 500px;
   width: 200px;
   height: 200px;
