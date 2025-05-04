@@ -1,20 +1,20 @@
-if (num) {
-  else if (num % 3 == 0) {
-  条件Aが成り立つときの処理
-}
+let num = Math.floor(Math.random() * 31);
+
+console.log(num);
+
+if (num & 3 == 0) {
     console.log('3の倍数です')
-    break;
-  else if (num % 5 == 0) {
-  条件Aが成り立つときの処理
-}
-    console.log('3の倍数です')
-    break;
-  else if (num % 3 == 0 && num % 5 == 0) {
-    console.log(“3と5の倍数です”)
-    break;
-  default:
-    console.log('num')
-    break;
 }
 
-num = 15
+  else if (num % 5 == 0) {
+    console.log('5の倍数です')
+}
+
+  else if (num % 3 == 0 && num % 5 == 0) {
+    console.log(“3と5の倍数です”)
+}
+   else {
+   console.log('はずれです');
+}
+
+num = 15;
