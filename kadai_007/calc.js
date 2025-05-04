@@ -25,3 +25,8 @@ num = 30;
    else {
    console.log('num');
 }
+
+// それ以外のときは、変数を出力
+   else {
+    print(num);
+}
