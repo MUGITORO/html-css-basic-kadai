@@ -6,7 +6,6 @@ for (let i = 0; i < holidays.length; i += 1) {
 }
 
 // while文の場合
-let i = 0;
-while (i < holidays.length) {
+while (let i = 0; i < holidays.length; i += 1) {
   console.log(holidays[i]);
 }
