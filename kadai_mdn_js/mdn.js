@@ -1,1 +1,5 @@
-console.log(new Date(setUTCFullYear(2024).setUTCMonth(10).setUTCDate(12)); 
+const new Date = () => {
+getFullYear(), getMonth(), getDate()
+}
+
+console.log(new Date); 
