@@ -29,6 +29,11 @@ main {
  margin-bottom: 20px;   /* 外側下余白 */
  display: inline-block;    /* インラインブロックを設定 */
 } 
+@media screen and (max-width: 768px) {
+    div {
+        display: block;
+    }
+}
 h2{
  font-size: 30px;
  border-bottom: 3px dotted rgb(236, 122, 122);
@@ -46,7 +51,7 @@ p::first-letter {  /* 最初の文字を青 */
   color: rgb(97, 206, 249);
 }
 footer {
-  cilor: rgb(255, 255, 255);  /* 文字の色 */
+  color: rgb(255, 255, 255);  /* 文字の色 */
   background-color: rgb(244, 79, 79);
 }
 a:link {     /* 訪問済みリンクの色 */
