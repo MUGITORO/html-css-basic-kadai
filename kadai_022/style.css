@@ -13,7 +13,7 @@ main {
   margin-top: 10px;
 }
 #parent {
-  display: flex;  /* Flexboxを指定 */
+  flex-direction: column;  /* Flexboxを指定 */
 }
 .contents {
  border: 3px solid rgb(238, 204, 204);  /* 実線の枠で囲む */
