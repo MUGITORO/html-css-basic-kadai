@@ -30,7 +30,7 @@ main {
  display: inline-block;    /* インラインブロックを設定 */
 } 
 @media screen and (max-width: 768px) {
-    div {
+    parent {
         display: block;
     }
 }
