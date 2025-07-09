@@ -1,13 +1,7 @@
- // add-btnというidを持つHTML要素を取得し、定数に代入する
- const addBtn = document.getElementById('add-btn');
+// output-btnというidを持つHTML要素を取得し、定数に代入する
+const btn = document.getElementById('text');
 
- // parent-listというidを持つHTML要素を取得し、定数に代入する
- const parentList = document.getElementById('parent-list');
-
-   btn.addEventListener('click', () => { 
-
-   const childList = document.createElement('li');
-
-  childList.textContent = 'ボタンをクリックしました';
-
- });
+// HTML要素がクリックされたときにイベント処理を実行する
+btn.addEventListener('click', () => {
+  console.log('クリックされました！');
+});
