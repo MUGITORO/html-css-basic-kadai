@@ -12,20 +12,32 @@ main {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-#parent {
-  flex-direction: column;  /* Flexboxを指定 */
+img{
+  display: block;
+  width: 70%;
 }
-.contents {
+#parent { /* idの場合は ＃ */
+  display: flex;  /* Flexboxを指定 */
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) { /*スマホ画面でタテ並び*/
+     #parent {
+     flex-direction: column;    } /*タテ並びにする*/
+}
+.contents { /* classの場合は　.　*/
  border: 3px solid rgb(238, 204, 204);  /* 実線の枠で囲む */
  flex-basis: 25%; /* 子要素の幅「widht」は使わない */
- padding: 10px 15px; /* 内側余白 */
- margin: 20px 0; /* 外側余白 */
+ flex-wrap: nowrap;  /* Flexboxアイテムの折り返し */
+ padding-left: 15px;  /* 内側左余白 */
+ padding-right: 15px;   /* 内側右余白 */
+ padding-top: 10px;  /* 内側上余白 */
+ padding-bottom: 10px;   /* 内側下余白 */
+ margin-left: 0px;  /* 外側左余白 */
+ margin-right: 0px;   /* 外側右余白 */
+ margin-top: 20px;  /* 外側上余白 */
+ margin-bottom: 20px;   /* 外側下余白 */
+ display: inline-block;    /* インラインブロックを設定 */
 } 
-@media screen and (max-width: 768px) {
-     flex-direction: column; {
-        display: block;
-    }
-}
 h2{
  font-size: 30px;
  border-bottom: 3px dotted rgb(236, 122, 122);
@@ -38,7 +50,7 @@ h2::before {  /* 見出しの前に〇をつける */
 p {
   font-size: 25px;
 }
-p:nth-of-type(2)::first-letter {  /* 最初の文字を青 */
+p::first-letter {  /* 最初の文字を青 */
   font-weight: bold;
   color: rgb(97, 206, 249);
 }
@@ -46,11 +58,9 @@ footer {
   color: rgb(255, 255, 255);  /* 文字の色 */
   background-color: rgb(244, 79, 79);
 }
-a:visited {     /* 訪問済みリンクの色 */
+a:link {     /* 訪問済みリンクの色 */
   color: rgb(193, 234, 251);
 }
 a:hover {    /* カーソルが乗った時の色 */
   color: rgb(245, 178, 168);
 }
-
-  /*  */
