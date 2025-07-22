@@ -7,15 +7,6 @@
 </head>
 
 <body>
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <title>PHP基礎編</title>
-</head>
-
-<body>
     <p>
         <?php
 
@@ -42,14 +33,12 @@
             $sortedDesc = sort_2way($nums, false);
             echo "降順にソートします: ";
             foreach ($sortedDesc as $num) {
-                echo $nums . " ";
+                echo $num . " ";
             }
 
         ?>
     </p>
-</body>
 
-</html>
 </body>
 
 </html>
