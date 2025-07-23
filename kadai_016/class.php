@@ -13,41 +13,37 @@
        class Food {
 
        // プロパティを定義する(publicは閲覧権限)
-       public $name;
-       public $price;
+       public $potato;
 
-            // メソッドを定義する
-            public function __construct(string $name) {
-                $this->name = $name;
-            public function __construct(string $price) {
-                $this->name = $price;
+       // メソッドを定義する
+       public function __construct(string $potato) {
             }
         }
 
         // インスタンス化する
-        print_r(name: 'potato', price: 250);
+        $potato = new Food('potato', 250); print_r($potato);
+
+        // メソッドの呼び出し
+        $potato->show_name(potato)
+        $potato->show_price(250);
 
        // クラスを定義する
        class Animal {
 
        // プロパティを定義する(publicは閲覧権限)
-       public $name;
-       public $hight;
-       public $weight;
+       public $dog;
 
-            // メソッドを定義する
-            public function __construct(string $name) {
-                $this->name = $name;
-            public function __construct(string $hight) {
-                $this->name = $hight;
-            public function __construct(string $hight) {
-                $this->name = $weight;
+       // メソッドを定義する
+       public function __construct(string $dog) {
             }
         }
 
         // インスタンス化する
-        print_r(name: 'potato', hight: 60, weight: 5000);
+        $potato = new Food('dog', 250); print_r($dog);
 
+        // メソッドの呼び出し
+        $potato->show_name(dog)
+        $potato->show_price(250);
 ?>
    </p>
 
