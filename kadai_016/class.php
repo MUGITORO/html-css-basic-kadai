@@ -8,55 +8,47 @@
 
 <body>
   <p>
-     
 <?php
        // クラスを定義する
        class Food {
-         constructor() {
-           this.name = 'potato';
-           this.price = 250;
-         }
-           // プロパティを定義する
-           public $potato;
-       }
+
+       // プロパティを定義する(publicは閲覧権限)
+       public $name;
+       public $price;
 
             // メソッドを定義する
-            public function set_name(string $potato) {
-                $this->name = $potato;
-            }
-            public function show_potato() {
-                echo $this->potato. '<br>';
+            public function __construct(string $name) {
+                $this->name = $name;
+            public function __construct(string $price) {
+                $this->name = $price;
             }
         }
 
         // インスタンス化する
-        $potato= new Food();
+        print_r(name: 'potato', price: 250);
 
        // クラスを定義する
        class Animal {
-         constructor() {
-           this.name = 'dog';
-           this.hight= 60;
-           this.weight= 5000;
-         }
-           // プロパティを定義する
-           public $dog;
-       }
+
+       // プロパティを定義する(publicは閲覧権限)
+       public $name;
+       public $hight;
+       public $weight;
 
             // メソッドを定義する
-            public function set_name(string $dog) {
-                $this->name = $dog;
-            }
-            public function show_dog() {
-                echo $this->dog. '<br>';
+            public function __construct(string $name) {
+                $this->name = $name;
+            public function __construct(string $hight) {
+                $this->name = $hight;
+            public function __construct(string $hight) {
+                $this->name = $weight;
             }
         }
 
         // インスタンス化する
-        $potato= new Animal();
+        print_r(name: 'potato', hight: 60, weight: 5000);
 
 ?>
-
    </p>
 
 </body>
