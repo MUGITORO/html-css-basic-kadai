@@ -9,41 +9,58 @@
 <body>
   <p>
 <?php
-       // クラスを定義する
-       class Food {
+    // クラスを定義
+    class Food {
 
-       // プロパティを定義する(publicは閲覧権限)
-       public $potato;
+    // プロパティを定義(publicは閲覧権限)
+    public $name;
+    public $price;
 
-       // メソッドを定義する
-       public function __construct(string $potato) {
-            }
-        }
+    // コンストラクタ
+    public function __construct($name, $price) {
+        $this->name = $name;
+        $this->price = $price;
+    }
 
-        // インスタンス化する
-        $potato = new Food('potato', 250); print_r($potato);
+    // メソッド
+    public function showInfo() {
+        echo "name:food:private" . $this->name . "<br>";
+        echo "price:food:private" . $this->price . "<br>";
+    }
+    }
 
-        // メソッドの呼び出し
-        $potato->show_name(potato)
-        $potato->show_price(250);
+    // インスタンスの作成
+    $potato = new Food("potato", 250);
 
-       // クラスを定義する
-       class Animal {
+    // 出力（メソッドの呼び出し）
+    $potato->showInfo();
 
-       // プロパティを定義する(publicは閲覧権限)
-       public $dog;
+    // クラスを定義
+    class Animal{
 
-       // メソッドを定義する
-       public function __construct(string $dog) {
-            }
-        }
+    // プロパティを定義(publicは閲覧権限)
+    public $name;
+    public $price;
 
-        // インスタンス化する
-        $potato = new Food('dog', 250); print_r($dog);
+    // コンストラクタ
+    public function __construct($name, $heigth, $weight) {
+        $this->name = $name;
+        $this->heigth= $heigth;
+        $this->weight= $weight;    }
 
-        // メソッドの呼び出し
-        $potato->show_name(dog)
-        $potato->show_price(250);
+    // メソッド
+    public function showInfo() {
+        echo "name:Animal:private" . $this->name . "<br>";
+        echo "heigth:Animal:private" . $this->heigth. "<br>";
+        echo "weight:Animal:private" . $this->weight. "<br>";
+    }
+    }
+
+    // インスタンスの作成
+    $dog= new Animal("dog", 60, 5000);
+
+    // 出力（メソッドの呼び出し）
+    $dog->showInfo();
 ?>
    </p>
 
